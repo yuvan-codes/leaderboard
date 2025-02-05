@@ -1,9 +1,14 @@
-import Leaderboard from './board';
+import { Routes, Route } from "react-router-dom";
+import Leaderboard from "./board";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
   return (
     <>
-    <Leaderboard />
+      <Routes>
+        <Route path="/" element={<Leaderboard />} />
+        <Route path="/admin" element={<PrivateRoute />} />
+      </Routes>
     </>
   );
 }
