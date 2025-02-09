@@ -55,7 +55,7 @@ const Leaderboard = () => {
             <Trophy className="w-10 h-10 text-yellow-400 animate__animated animate__fadeIn animate__delay-1s" />
           </div>
           <p className="text-slate-300 text-lg animate__animated animate__fadeIn animate__delay-1.2s">
-            Overall Leaderboard • January 2025
+            Overall Leaderboard • February 2025
           </p>
         </div>
 
