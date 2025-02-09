@@ -104,9 +104,9 @@ const AdminInterface = () => {
                   <td className="p-4 text-right space-x-2">
                     <Button
                       className="bg-green-500 hover:bg-green-600"
-                      onClick={() => updatePoints(team.teamName, 100)}
+                      onClick={() => updatePoints(team.teamName, 10)}
                     >
-                      <Plus className="w-4 h-4" /> 100
+                      <Plus className="w-4 h-4" /> 10
                     </Button>
                     <Button
                       className="bg-red-500 hover:bg-red-600"

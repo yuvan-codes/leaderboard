@@ -5,12 +5,15 @@ const useGetTeams = () => {
   const { allPoints, setAllPoints } = useContext(PointsContext);
   const getTeams = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/leaderboard", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      const response = await fetch(
+        "https://hackathonbackend-0zxm.onrender.com/api/leaderboard",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: Internal Server Error`);
@@ -27,13 +30,16 @@ const useGetTeams = () => {
   const addNewTeam = async (team) => {
     try {
       // console.log(team);
-      const response = await fetch("http://localhost:5000/api/add", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ team }),
-      });
+      const response = await fetch(
+        "https://hackathonbackend-0zxm.onrender.com/api/add",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ team }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: Internal Server Error`);
@@ -47,13 +53,16 @@ const useGetTeams = () => {
   const eraseTeam = async (team) => {
     try {
       console.log("To be deleted: " + team);
-      const response = await fetch("http://localhost:5000/api/delete", {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ team }),
-      });
+      const response = await fetch(
+        "https://hackathonbackend-0zxm.onrender.com/api/delete",
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ team }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: Internal Server Error`);
@@ -67,13 +76,16 @@ const useGetTeams = () => {
 
   const addPoints = async (team, value) => {
     try {
-      const response = await fetch("http://localhost:5000/api/update", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ team, value }),
-      });
+      const response = await fetch(
+        "https://hackathonbackend-0zxm.onrender.com/api/update",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ team, value }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: Internal Server Error`);
