@@ -49,13 +49,13 @@ const Leaderboard = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold text-white flex items-center gap-2 animate__animated animate__fadeIn animate__delay-1s">
               <Brain className="w-10 h-10 text-blue-400" />
-              Data-Thon 2025
+              DataQuest 2.0 2025
               <p className="text-sm text-gray-300">By DSC VITC</p>
             </h1>
             <Trophy className="w-10 h-10 text-yellow-400 animate__animated animate__fadeIn animate__delay-1s" />
           </div>
           <p className="text-slate-300 text-lg animate__animated animate__fadeIn animate__delay-1.2s">
-            Overall Leaderboard • January 2025
+            Overall Leaderboard • February 2025
           </p>
         </div>
 
