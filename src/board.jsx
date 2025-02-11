@@ -59,7 +59,7 @@ const Leaderboard = () => {
           </p>
         </div>
 
-        <div className="rounded-lg overflow-hidden border border-slate-700 bg-slate-900/50 backdrop-blur-sm shadow-xl">
+        <div className="rounded-lg md:overflow-hidden overflow-y-hidden border border-slate-700 bg-slate-900/50 backdrop-blur-sm shadow-xl">
           <table className="w-full">
             <thead className="bg-gradient-to-r from-slate-800 to-slate-700 text-slate-300">
               <tr>
