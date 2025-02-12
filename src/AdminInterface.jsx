@@ -109,6 +109,18 @@ const AdminInterface = () => {
                       <Plus className="w-4 h-4" /> 10
                     </Button>
                     <Button
+                      className="bg-green-500 hover:bg-green-600"
+                      onClick={() => updatePoints(team.teamName, 1)}
+                    >
+                      <Plus className="w-4 h-4" /> 1
+                    </Button>
+                    <Button
+                      className="bg-green-500 hover:bg-green-600"
+                      onClick={() => updatePoints(team.teamName, 0.1)}
+                    >
+                      <Plus className="w-4 h-4" /> .1
+                    </Button>
+                    <Button
                       className="bg-red-500 hover:bg-red-600"
                       onClick={() => setDeleteTeam(team)}
                     >
